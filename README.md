@@ -2,7 +2,7 @@
 
 spring boot + gradle
 
-restDocs + swagger
+restDocs + asciidoctor + swagger
 
 template engine: thymleaf
 
