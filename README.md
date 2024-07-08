@@ -2,8 +2,8 @@
 
 spring boot + gradle
 
+thymeleaf
+
+--
+추후 추가
 restDocs + asciidoctor + swagger
-
-template engine: thymleaf
-
-webClient
