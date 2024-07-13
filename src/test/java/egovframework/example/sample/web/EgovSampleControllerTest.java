@@ -1,5 +1,6 @@
 package egovframework.example.sample.web;
 
+import com.epages.restdocs.apispec.MockMvcRestDocumentationWrapper;
 import egovframework.example.sample.service.EgovSampleService;
 import egovframework.example.sample.service.SampleVO;
 import org.egovframe.rte.fdl.property.EgovPropertyService;
@@ -84,7 +85,7 @@ class EgovSampleControllerTest {
                         .param("searchCondition", "0")
                     )
                 .andDo(
-                    MockMvcRestDocumentation.document(
+                    MockMvcRestDocumentationWrapper.document(
                        /* Preprocessors.preprocessRequest(Preprocessors.prettyPrint())
                         , Preprocessors.preprocessResponse(Preprocessors.prettyPrint())
                         ,*/ requestParameters(
