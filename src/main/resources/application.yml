@@ -5,3 +5,6 @@ spring:
     allow-bean-definition-overriding: true
   jpa:
     open-in-view: false
+
+globals:
+  isQuartz: false
