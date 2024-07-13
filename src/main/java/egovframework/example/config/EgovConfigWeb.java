@@ -1,6 +1,7 @@
 package egovframework.example.config;
 
 import egovframework.example.pagination.EgovPaginationDialect;
+import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
+import org.thymeleaf.extras.springsecurity5.dialect.SpringSecurityDialect;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
@@ -58,6 +60,11 @@ public class EgovConfigWeb implements WebMvcConfigurer, ApplicationContextAware 
 		templateEngine.setEnableSpringELCompiler(true);
 		// add custom tag
 		templateEngine.addDialect(new EgovPaginationDialect());
+		//layout
+		templateEngine.addDialect(new LayoutDialect());
+		//spring security
+		templateEngine.addDialect(new SpringSecurityDialect());
+
 		return templateEngine;
 	}
 
