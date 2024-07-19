@@ -1,9 +1,16 @@
-전자정부 4.2 기본 템플릿 설정
 
-spring boot + gradle
+## 전자정부 4.2 기본 템플릿 + 연계 설정 추가
 
-thymeleaf
+#### spring boot 2.7.12
 
---
-추후 추가
-restDocs + asciidoctor + swagger
+#### java 17
+
+---
+
+####
+
+#### logback -> log4j2
+
+#### maven -> git
+
+#### restDocs + asciidoctor + swagger
